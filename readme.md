@@ -1,8 +1,4 @@
 # Music Player
-<p>
-<a href="https://github.com/krush11/Music_Player/graphs/contributors" alt="Contributors">
-        <img src="https://img.shields.io/github/contributors/badges/shields" /></a>
-</p>
 A simple front-end Music player site made using HTML and CSS.
 
 ## How to replicate?
