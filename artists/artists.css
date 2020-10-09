@@ -1,0 +1,364 @@
+/* @media all and (max-width: 600px){
+    #queue{
+        visibility: hidden;
+    }
+    #main_section{
+        width: 100vh;
+    }
+} */
+
+/* Attributes common to the page or used widely */
+body{
+    background-color: rgb(12, 12, 27);
+    padding:3px 28px 13px 28px;
+    color: white;
+}
+
+@font-face {
+    font-family: FontName;
+    src: url('path/filename.eot');
+    src: url('path/filename.eot?#iefix') format('embedded-opentype'),
+    url('path/filename.woff2') format('woff2'),
+    url('path/filename.woff') format('woff'),
+    url('path/filename.ttf') format('truetype');
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    width: 20px;
+    height: 36px;
+    color: white;
+}
+
+p{
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+}
+
+.heavy-font{
+    font-weight: 700;
+}
+/* For all mobile devices, hide queue section */
+
+aside{
+    visibility: hidden;
+}
+
+/* Top head section */
+header{
+    margin: 2vh 0vw;
+}
+
+.heading{
+    display: flex;
+}
+
+p{
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+}
+
+.heading p{
+    font-size: 25px;
+}
+
+#site-icon{
+    float: left;
+    margin-right: 1vw;
+}
+
+#music{
+    font-weight: 800;
+    color: orange;
+    width: 65vw;
+}
+
+#right-heading{
+    display: flex;
+    flex-direction: row;
+}
+
+#search{
+    background-color: rgb(28, 28, 61);
+    color:  white;
+    background-image: url(../icons/sear.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: auto;
+    padding-left: 30px;
+    height: 25px;
+    margin-right: 30px;
+    border: 0px;
+    border-radius: 10%;
+}
+
+#my-photo{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; 
+}
+
+/* Main */
+
+#main{
+    margin-left: 5vw;
+    margin-top: 10vh;
+    display: flex;
+}
+
+#artist_intro{
+    width: 60vw;
+    height: 50vh;
+    background-color: rgb(38, 38, 80);
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#artist_intro img{
+    width: 90%;
+    height: 100%;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    margin-left: -10px;
+    justify-content: center;
+}
+
+#stats{
+    font-size: 10px;
+    font-family: cursive;
+    color: rgb(168, 167, 167);
+}
+
+#about-artist{
+    color:rgb(160, 159, 159);
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#name_heading{
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#play_now{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width:150px;
+    height: 35px;
+    color: white;
+    background-image: radial-gradient(darkblue, purple);
+    transition: all 0.5s linear;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#play_now:hover{
+    color:grey  ;    
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 1px grey;
+}
+
+#follow{
+    font-size: 14px; 
+    font-weight: 700;
+    color: white;
+    margin-top: -25px;
+    margin-left: 175px;
+}
+
+
+
+#songs_made{
+    margin-top: 12px;
+    font-size: 12px;
+    color: rgb(121, 120, 120);
+}
+
+/* Songs List */
+
+#songs_list{
+    margin-top: 5px;
+    width: 60vw;
+}
+
+.song{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(28, 28, 71);
+    height: 10vh;
+    align-items: center;
+}
+
+.song:hover{
+    background-color: rgb(42, 42, 75);
+}
+
+.numbering{
+    width: 5%;
+    height: 100%;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    font-size: 13px;
+}
+
+.song_img{
+    width: 9%;
+    height: 100%;
+}
+
+.song_img img{
+    height: 80%;
+    width: 70%;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.song_info{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+}
+
+.song_name{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.song_length{
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.add_fav{
+    width: 8%;
+    height: 100%;
+}
+.add_fav img{
+    margin-left: 25%;
+    margin-top: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+.plus{
+    font-size: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3%;
+    height: 100%;
+}
+
+/*Queue*/
+#queue {
+    flex-grow: 1;
+    height: 200px;
+    color: white;
+    font-family: "Gelasio", serif;
+}
+
+.title {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+#latest-release {
+    flex-wrap: wrap;
+}
+
+.latest-song {
+    display: grid;
+    height: 6rem;
+    grid-gap: 2px;
+    grid-template-columns: 5rem 170px 30px;
+    padding: 10px;
+}
+
+.latest-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.latest-info {
+    display: flex;
+    align-items: center;
+}
+
+.latest-info p {
+    font-size: 0.9rem;
+}
+
+.latest-info span {
+    color: grey;
+}
+
+.latest-button {
+    color: yellowgreen;
+    justify-content: flex-end;
+}
+
+#queue-songs {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.q-song {
+    display: grid;
+    grid-template-columns: 30px 40px 170px 30px;
+    grid-gap: 2px;
+    margin-top: 10px;
+    height: 40px;
+}
+
+.queue-number p {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.q-song img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+}
+
+.queue-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.queue-info {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.queue-info span {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.queue-like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
