@@ -1,4 +1,4 @@
-# Music Player
+# MusicLy
 A simple front-end Music player site made using HTML and CSS.
 
 ## How to replicate?
