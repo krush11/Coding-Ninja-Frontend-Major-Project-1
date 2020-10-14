@@ -14,3 +14,5 @@ Anyone is allowed to contribute.
 
 #### Any future developments?
 No, As of now I have not planned any developments in the future. Although ideas are welcome.
+
+
